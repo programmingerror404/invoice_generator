@@ -7,7 +7,7 @@ Go to the project folder
 
 
 ```
-> Run ###### composer install
+> Run composer install
 ```
 
 Hurray!!!
