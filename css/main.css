@@ -1,0 +1,324 @@
+html {
+	color: #222;
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+textarea {
+	resize: vertical;
+}
+
+.browserupgrade {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+body {
+	font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+	padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+#image-preview {
+	width: 180px;
+	height: 180px;
+	position: relative;
+	overflow: hidden;
+	background-color: #ddd;
+	color: #ecf0f1;
+}
+#image-preview input {
+	line-height: 100px;
+	font-size: 100px;
+	position: absolute;
+	opacity: 0;
+	z-index: 10;
+}
+#image-preview label {
+	position: absolute;
+	z-index: 5;
+	opacity: 0.8;
+	cursor: pointer;
+	background-color: #000;
+	width: 100px;
+	height: 35px;
+	font-size: 12px;
+	line-height: 35px;
+	text-transform: uppercase;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	text-align: center;
+}
+.form-group {
+	margin-bottom: 5px;
+}
+.textarea,
+textarea.form-control,
+input.form-control,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+[type="text"].form-control,
+[type="password"].form-control,
+[type="email"].form-control,
+[type="tel"].form-control,
+[contenteditable].form-control {
+	opacity: 1;
+	color: #000;
+}
+.card.border-none.logo-border {
+	border: 0;
+	box-shadow: none;
+}
+::placeholder {
+	/* Firefox, Chrome, Opera */
+	color: #000;
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: #000;
+}
+
+::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: #000;
+}
+.billing_summary tr:last-child {
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+}
+
+.billing_summary tr:last-child td,
+.billing_summary tr:last-child th {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 20px;
+}
+
+.thead-dark tr th,
+.thead-dark tr td {
+	text-align: center;
+}
+
+.table td,
+.table th {
+	vertical-align: middle;
+}
+
+#blah {
+	max-height: 256px;
+	height: auto;
+	width: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+}
+#img_contain {
+	border-radius: 5px;
+	/*  border:1px solid grey;*/
+	margin-top: 20px;
+	width: auto;
+}
+.input-group {
+	margin-left: calc(calc(100vw - 320px) / 2);
+	margin-top: 40px;
+	width: 320px;
+}
+.imgInp {
+	width: 150px;
+	margin-top: 10px;
+	padding: 10px;
+	background-color: #d3d3d3;
+}
+.loading {
+	animation: blinkingText ease 2.5s infinite;
+}
+@keyframes blinkingText {
+	0% {
+		color: #000;
+	}
+	50% {
+		color: transparent;
+	}
+	99% {
+		color: transparent;
+	}
+	100% {
+		color: #000;
+	}
+}
+.custom-file-label {
+	cursor: pointer;
+}
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+	*,
+	*:before,
+	*:after {
+		background: transparent !important;
+		color: #000 !important;
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+
+	a[href^="#"]:after,
+	a[href^="javascript:"]:after {
+		content: "";
+	}
+
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+
+	thead {
+		display: table-header-group;
+	}
+
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+
+	img {
+		max-width: 100% !important;
+	}
+
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}
